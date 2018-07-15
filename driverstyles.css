@@ -1,0 +1,370 @@
+
+.header{
+    height: 95vh;
+    background-image:linear-gradient(to bottom, transparent 0%, black 100%),url(img/car4.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 400px;
+    
+}
+
+.header__text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    /*background-color: aqua;*/
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.heading-primary--main{
+    display: block;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    
+    animation-name: moveInLeft;
+    animation-duration: 1.2s;
+    animation-timing-function:ease-out;
+}
+
+.go{
+    color:#f7f71d;
+}
+.heading-primary--sub{
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 13.8px;
+    
+    animation-name: moveInRight;
+    animation-duration: 3s;
+}
+.btn--white{
+    background-color: #fff;
+    color: #777;
+    letter-spacing: 1px;
+
+    
+}
+.btn-animated{
+    animation: moveInBottom 0.8s ease-out .75s ;
+    animation-fill-mode: backwards;
+}
+.btn:link,
+.btn:visited{
+    padding: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 11px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    top: 60px;
+    margin-left: 40px;
+   
+ }
+ .btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 12px rgba(0,0,0,.2);
+}
+
+.btn:active{
+    transform: translateY(1px);
+    box-shadow: 0 5px 6px rgba(0,0,0,.2);
+}
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s;
+
+}
+/*h1 {
+    color: #fff;
+}*/
+table{
+    border-collapse: collapse;
+    widows: 100%;
+    color: #588c7e;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: left;
+
+}
+th{
+    background-color: #588c7e;
+    color: white;
+    padding: 0px 30px;
+
+}
+td{
+    padding: 0px 30px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+
+*, *:before, *:after {
+  /*--box-sizing: inherit;*/
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 1.6rem;
+  padding: 0 0.8rem;
+    
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   padding-bottom: 0.5rem; 
+    
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    
+}
+
+.card:hover #yellow{
+    opacity: 1;
+    
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #777;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+  background-color: #f7f71d;
+}
+
+.tim{
+    width: 8rem;
+    height: 18rem;
+}
+
+.second:hover{
+    background-color: #f7f71d;
+    
+}
+
+.card-text{
+   
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-top: -8.9rem;
+    margin-left: ;
+    padding-bottom: 0.8rem;
+    text-align: center;
+}
+
+#yellow{
+    font-size: 1.5rem;
+    color: #f7f71d;
+    top: 15.1rem;
+    left: 15px;
+    font-weight: 400;
+    margin-top: -2.9rem;
+    margin-left: ;
+    opacity: 0;
+}
+
+/*--------------------------------------------------------------*/
+
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #f7f71d;
+  color: #777;
+  padding: 14px 20px;
+  margin: 8px ;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+    border-radius: 10px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+button:hover {
+  transform: scale(1.1);
+    transition-duration: 0.8s;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #777;
+    color: #f7f71d;
+    border-radius: 10px;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    text-align: center;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.72);
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+.sig-t{
+    font-size: 1.2rem;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777;
+  /*  line-height: 1.7;
+    padding: 25px;
+    box-sizing: border-box;*/
+
+}
+
+/*selcet tag dropdown list */
+
+select{
+    appearance: none;
+    -o-appearance: none;
+    -webkit-appearance :none;
+    display: block;
+    margin: 30px 0;
+    padding: 10px 50px 10px 10px;
+    background: url(img/select.png) no-repeat 95% center;
+    background-color: #777;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    width:250px;
+
+}

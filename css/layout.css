@@ -1,0 +1,35 @@
+/*Variables*/
+
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row{
+    max-width: 114rem;
+    background-color: #eee;
+    margin: 0 auto;
+    float: left;
+    
+}
+
+.row:not(:last-child){
+    margin-bottom: 8rem;
+}
+
+.col-1-of-2{
+    width: 49.2%;;
+    background-color: aqua;
+    margin-right: 6rem;
+    float: left;
+    
+}
+
+.span-2-of-2 {
+	width: 100%;
+}
+
+.span-1-of-2 {
+	width: 49.2%;
