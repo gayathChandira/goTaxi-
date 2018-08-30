@@ -8,6 +8,14 @@
     height: 400px;
     
 }
+.header__logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.header__logo{
+    height: 37px;
+}
 
 .header__text-box{
     position: absolute;
@@ -243,7 +251,7 @@ input[type=text]:focus, input[type=password]:focus {
 button {
   background-color: #f7f71d;
   color: #777;
-  padding: 14px 20px;
+  /*padding: 14px 20px;*/
   margin: 8px ;
   border: none;
   cursor: pointer;
@@ -258,19 +266,7 @@ button:hover {
     transition-duration: 0.8s;
 }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #777;
-    color: #f7f71d;
-    border-radius: 10px;
-}
 
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-    text-align: center;
-}
 
 /* Add padding to container elements */
 .container {
@@ -327,7 +323,20 @@ hr {
   clear: both;
   display: table;
 }
+/* Extra styles for the cancel button */
+.cancelbtn {
 
+  /*padding: 14px 20px;*/
+  background-color: #777;
+  color: #f7f71d;
+  border-radius: 10px;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    text-align: center;
+}
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {

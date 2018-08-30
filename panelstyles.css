@@ -1,3 +1,5 @@
+
+
 .header{
     height: 95vh;
     background-image:linear-gradient(to bottom, transparent 0%, black 100%),url(img/car4.jpg);
@@ -5,6 +7,14 @@
     background-position: top;
     position: relative;
     
+}
+.header__logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.header__logo{
+    height: 37px;
 }
 
 .header__text-box{

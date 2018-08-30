@@ -15,6 +15,10 @@
 </head>
 <body>
 	<header class="header">
+		<div class="header__logo-box">
+            <a href="/Trial/"><img src="img/favicon2.png" alt="logo" class="header__logo"></a>
+        </div>
+       
 		<div class="header__text-box">
                 <h1 class="heading-primary">
                 <span class="heading-primary--main"><span class="go">GO</span>TAXI</span>
@@ -25,10 +29,11 @@
 
                 <a href="#" class="btn btn--white btn--animated" onclick="document.getElementById('id03').style.display='block'">Add Driver Details</a>
                 <a href="#" class="btn btn--white btn--animated" onclick="document.getElementById('id04').style.display='block'">Remove Driver Details</a>
+                
 
             </div>
 	</header>
-	<table align="center">
+	<table align="center">       <!-- driver details table -->
 		<tr>
 			<th>ID</th>
 			<th>First Name</th>
@@ -37,6 +42,7 @@
 			<th>Age</th>
 			<th>Vehicle Type</th>
 			<th>Contact</th>
+			<th> </th>
 		</tr>
 		<?php
 			include_once('includes/dbh.inc.php');
@@ -45,7 +51,7 @@
 			$resultCheck = mysqli_num_rows($result);
 			if ($resultCheck > 0){
 				while ($row = mysqli_fetch_assoc($result)) {
-					echo "<tr><td>".$row['id']."</td><td>".$row['firstname']."</td><td>".$row['lastname']."</td><td>".$row['nic']."</td><td>".$row['age']."</td><td>".$row['vehicletype']."</td><td>".$row['contact']."</td></tr>";
+					echo "<tr><td>".$row['id']."</td><td>".$row['firstname']."</td><td>".$row['lastname']."</td><td>".$row['nic']."</td><td>".$row['age']."</td><td>".$row['vehicletype']."</td><td>".$row['contact']."</td><td><form method=\"POST\" action=\"edit.php\" ><input name=\"uniID\" type=\"hidden\" value=".$row['id']."><input type='submit' value=\"Edit\" ></form></td></tr>";
 				}echo "</table>";
 			}else{
 				echo "0 results";
@@ -122,5 +128,7 @@
 	    </div>
 	  </form>
 	</div>
+
+
 </body>
 </html>

@@ -25,7 +25,8 @@ if(isset($_POST['login'])){
 
 			if($resultCheck < 1){               //check the username is available in database
 				echo '<script language="javascript">
-					alert("Please Check the Username & Password");window.location.replace("../?login=error1");
+					alert("Please Check the Username & Password");
+					window.location.replace("../?login=error1");
 					</script>';    //give alert and redirect to main page.
 				//header("Location: ../?login=error1");
 				exit();
@@ -34,7 +35,11 @@ if(isset($_POST['login'])){
 					//verify password 
 					$hashedpwdCheck = password_verify(  $_POST['psw'] , $row['password']);
 					if ($hashedpwdCheck == false) {          //if password is not match with the database
-						header("Location: ../index.php?login=error2");
+						echo '<script language="javascript">
+						alert("Please Check the Password");
+						window.location.replace("../?login=error2");
+						</script>';
+						//header("Location: ../index.php?login=error2");
 						exit();
 					}elseif ($hashedpwdCheck == true){
 						// log in user here

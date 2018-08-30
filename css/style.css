@@ -21,7 +21,7 @@ body{
     line-height: 1.7;
     color: #777;
     padding: 25px;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
 
 }
 
@@ -57,6 +57,9 @@ body{
 .header-btn-1:hover,.header-btn-2:hover{
     background-color: #f7f71d;
 }
+ .header-container{
+       padding: 20px 0px 0px 75px;
+    }
 
 .header-btn-1{
     margin-right: 5rem;
@@ -352,6 +355,32 @@ body{
         transition: transform .2s;
 
         }
+/* dineesha css */
+.list-content{
+    float: left;
+    padding: 20px 0px 0px 75px;
+    width: 35%;
+}
+.description{
+    float: left;
+    margin-top: 0px;
+    padding: 20px 0px 0px 50px;
+    border-left : 1px solid grey;
+    width: 65%;
+}
+#help-div1 , #help-div2{
+    display: inline;
+}
+.li-content{
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+    
+.h1-hd{
+    padding-right: 0px;
+}
+    /*dineesha css */
 
     .outline, .outline *{
         outline: 0px solid #F6A1A1;
@@ -584,6 +613,7 @@ body{
 .footer-copyright{
     display: inline-block;
     color: #fff;
+    right: 55px;
     border-top: 1px solid #f7f71d;
     padding-top: 0.3rem;
     font-weight: 300;
@@ -754,10 +784,11 @@ button:hover {
 /* Add padding to container elements */
 .container {
   padding: 16px;
+  margin: 0 auto;
 }
 
 /* The Modal (background) */
-.modal {
+.cu {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -817,3 +848,134 @@ hr {
 .sig-t{
     font-size: 1.2rem;
 }
+
+
+/*-----------------------------------------------------*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    padding-top: 60px;
+    text-align: left;
+}
+
+/* Modal Content/Box */
+.modal-content-log {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: ;
+    width: 40%;
+    border-radius: 1px;/* Could be more or less, depending on screen size */
+}
+
+.avatar{
+    padding-top: 1rem;
+    padding-bottom: 0;
+    height: 50%;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/*-------------------------------------------------------------*/
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #777 ;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #f7f71d;
+    color: #777;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #777;
+    color: #f7f71d;
+}
+
+/* Style the container/contact section */
+.container-cu {
+    border-radius: 5px;
+    background-color: #fcfcfc;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 1rem;
+    display: inline-block;
+    
+    
+}
+
+/* Create two columns that float next to eachother */
+.column-cu {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row-cu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }

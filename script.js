@@ -40,8 +40,12 @@ function currentslide(n){
 
 //-----------------------------------------------------------
     
-    
-
+ function alertpopup() {
+    alert("Login First!");
+}   
+ function bookalert() {
+    alert("Your Taxi Will Arive Soon!");
+} 
 // Get the modal
 var modal = document.getElementById('id01');
 

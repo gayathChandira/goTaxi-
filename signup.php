@@ -1,5 +1,5 @@
 
-
+<!-- contains the sign up form -->
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <form class="modal-content" action="includes/signup.inc.php" method="POST">
