@@ -1,0 +1,47 @@
+
+body{
+    margin: 0;
+}
+
+
+
+.slideshow-container{
+    width:60%;
+    position: relative;
+    margin: auto;
+}
+
+.slides{
+  display: none;
+}
+
+.prev,.next{
+    position: absolute;
+    top:40%;
+    color: #000;
+    padding: 0.5rem;
+}
+
+.next{
+    right: 0;
+}
+
+.prev:hover,.next:hover{
+    background-color: rgba(0,0,0,0.3);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.dots{
+    width: 0.1rem;
+    height: 0.1rem;
+    display: inline-block;
+    background: gray;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.active,.dots:hover{
+    background: #000;
+}
